@@ -1,2 +1,9 @@
+// abstract
+@import "abstracts/_variables.scss";
+
 // base
 @import "base/_base.scss";
+@import "base/_grid.scss";
+
+//components
+@import "components/_card.scss";
