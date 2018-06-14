@@ -1,7 +1,8 @@
 .hero {
-    background-image: url("http://placehold.it/1200x600");
+    background-image: url("../images/hero_background.jpg");
     background-position: center;
-    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 600px;
     padding-top: 60px; // offset the sticky nav
     display: flex;

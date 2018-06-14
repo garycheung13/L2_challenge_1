@@ -12,7 +12,7 @@ gulp.task('serve', ['scss'], function() {
     });
 
     gulp.watch("src/scss/*/**", ['scss']);
-    gulp.watch(["dist/css/main.css", "index.html"]).on('change', bs.reload);
+    gulp.watch(["index.html", "dist/images/*"]).on('change', bs.reload);
 });
 
 
