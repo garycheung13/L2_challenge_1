@@ -4,14 +4,44 @@
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+section {
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    h2 {
+        @include header_text(2rem);
+        color: $bright_orange;
+    }
+
+    h3 {
+        @include header_text(1.2rem);
+        margin-bottom: 20px;
+        color: $bright_orange;
+    }
+
+    p {
+        @include body_copy(0.9rem);
+        margin-bottom: 50px;
+        width: 80%;
+    }
+}
+
 // reponsive rem settings
 html {
     font-size: 14px;
-
     @media (min-width: 800px) {
-      font-size: 16px;
+        font-size: 16px;
     }
     @media (min-width: 1200px) {
-      font-size: 18px;
+        font-size: 18px;
     }
-  }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}

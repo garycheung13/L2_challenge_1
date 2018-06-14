@@ -1,0 +1,20 @@
+.blog {
+    hr {
+        max-width: 10%;
+        border: none; // clear the borders on the other three sides
+        border-top: 3px solid $nav_title_color;
+    }
+
+    h3 {
+        color: black;
+    }
+}
+
+.blog-post {
+    // width: 65%;
+
+    a {
+        @include all_caps(0.75rem);
+        color: $bright_orange;
+    }
+}

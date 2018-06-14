@@ -1,0 +1,31 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.col-lg-4 {
+    flex-basis: 33.33%;
+}
+
+.col-lg-6 {
+    flex-basis: 50%;
+}
+
+.col-lg-8 {
+    flex-basis: 66.67%;
+}
+
+.space-btwn {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    .col-sm-12 {
+        flex-basis: 100%;
+    }
+}

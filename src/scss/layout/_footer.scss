@@ -1,0 +1,33 @@
+.footer {
+    background-color: $bright_orange;
+    color: white;
+}
+
+.footer-content {
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    h3 {
+        @include header_text(1.2rem);
+    }
+}
+
+.footer-contact {
+    @include all_caps(0.7rem);
+    list-style-type: none;
+    padding: 0;
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    address {
+        display: inline;
+        font-style: normal;
+    }
+}
+
+.footer-contact__label {
+    float: left;
+    width: 15%;
+}

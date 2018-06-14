@@ -1,0 +1,30 @@
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: $nav_background;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    li a {
+        color: white;
+    }
+}
+
+.navbar-title {
+    @include header_text(1.1rem);
+    li a {
+        color: $nav_title_color;
+    }
+}
+
+.navbar-items {
+    @include all_caps(0.8rem);
+
+    li {
+        display: inline-block;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

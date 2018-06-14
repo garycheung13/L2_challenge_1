@@ -1,0 +1,18 @@
+.hero {
+    background-image: url("http://placehold.it/1200x600");
+    display: block;
+    height: 600px;
+}
+
+.hero-content {
+    background: white;
+    width: 40%;
+    padding: 2.5%;
+    position: relative;
+
+    button {
+        padding: 2%;
+        position: absolute;
+        right: 10%;
+    }
+}

@@ -26,7 +26,8 @@ gulp.task("scss", function () {
             browsers: ["last 20 versions"]
         }))
         .pipe(rename("main.min.css"))
-        .pipe(gulp.dest("dist/css/"));
+        .pipe(gulp.dest("dist/css/"))
+        .pipe(bs.stream());
 });
 
 gulp.task("default", ["serve"]);
