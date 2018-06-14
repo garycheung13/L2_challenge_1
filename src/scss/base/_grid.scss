@@ -24,6 +24,10 @@
     align-items: center;
 }
 
+.reverse {
+    flex-wrap: wrap-reverse;
+}
+
 @media screen and (max-width: 767px) {
     .col-sm-12 {
         flex-basis: 100%;

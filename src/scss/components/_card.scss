@@ -1,0 +1,32 @@
+.card {
+    position: relative;
+    box-sizing: border-box;
+    padding: 2%;
+    margin-bottom: 5%;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 15%;
+    }
+}
+
+.card-text {
+    background-color: $bright_orange;
+    width: 85%;
+    color: white;
+    padding: 5%;
+    box-sizing: border-box;
+    padding-top: 50%;
+    position: absolute;
+    z-index: -1;
+    right: 5%;
+    top: 17.5%;
+
+    @media screen and (max-width: 767px) {
+        font-size: 1rem;
+    }
+}
+
+.card-image {
+    width: 90%;
+    height: auto;
+}

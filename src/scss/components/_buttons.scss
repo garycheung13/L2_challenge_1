@@ -1,0 +1,7 @@
+.btn-primary {
+    @include header_text(1rem);
+    border: none;
+    padding: 2.5% 5% 2.5% 5%;
+    background-color: $bright_orange;
+    color: white;
+}

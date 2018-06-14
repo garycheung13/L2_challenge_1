@@ -9,6 +9,11 @@
 
     h3 {
         @include header_text(1.2rem);
+
+        @media screen and (max-width: 767px) {
+            margin-top: 5%;
+            margin-bottom: 10%;
+        }
     }
 }
 
@@ -30,4 +35,8 @@
 .footer-contact__label {
     float: left;
     width: 15%;
+
+    @media screen and (max-width: 767px) {
+        width: 25%;
+    }
 }

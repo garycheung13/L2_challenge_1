@@ -1,0 +1,24 @@
+.featured {
+    h2 {
+        margin-bottom: 5%;
+    }
+}
+
+.featured .content {
+    box-sizing: border-box;
+    padding-left: 5%;
+    width: 100%;
+
+    h3 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding-left: 0;
+    }
+}
