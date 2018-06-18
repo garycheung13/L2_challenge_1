@@ -10,23 +10,23 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="container row space-btwn align-center">
-            <ul class="navbar-title col-sm-6">
-                <li><a href="#">Shooky's Cookies</a></li>
-            </ul>
-            <ul class="navbar-mobile col-sm-6">
-                <li><img src="dist/images/hamburger.svg" alt="navigation icon"></li>
-            </ul>
-            <ul class="navbar-items col-sm-12">
-                <li><a href="#">About</a></li>
-                <li><a href="#">blog</a></li>
-                <li><a href="3">visit</a></li>
-            </ul>
-        </div>
+    <nav class="navbar container row space-btwn align-center">
+        <a class="navbar-title" href="#">Shooky's Cookies</a>
+
+        <!-- <div class="navbar-mobile col-sm-6">
+            <button class="btn-hamburger" role="navigation" id="menu-hamburger">
+                <img src="dist/images/hamburger.svg" alt="navigation icon">
+            </button>
+        </div> -->
+
+        <ul id="nav-options" class="navbar-items">
+            <li><a href="#">About</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">visit</a></li>
+        </ul>
     </nav>
-    <header class="hero">
-            <div class="container hero-content">
+    <header class="hero container">
+            <div class="hero-content">
                 <div class="hero-text">
                     <h1 class="hero-text__headline">Baked fresh,
                         <br>
@@ -34,7 +34,9 @@
                     </h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
                 </div>
-                <button class="btn-primary">Order a Batch</button>
+                <a href="#">
+                    <button class="btn-primary">Order a Batch</button>
+                </a>
             </div>
     </header>
     <section class="featured container">
@@ -46,11 +48,11 @@
                     <h3 class="card-text">Classic Chocolate Chip</h3>
                 </div>
                 <div class="card col-lg-6">
-                    <img src="http://placehold.it/300x200" alt="" class="card-image">
+                    <img src="dist/images/featured_spices.jpg" alt="" class="card-image">
                     <h3 class="card-text">Suger and Spice</h3>
                 </div>
                 <div class="card col-lg-6">
-                    <img src="http://placehold.it/300x200" alt="" class="card-image">
+                    <img src="dist/images/featured_vanilla.jpg" alt="" class="card-image">
                     <h3 class="card-text">More Than Vanilla</h3>
                 </div>
                 <div class="card col-lg-6">
@@ -108,11 +110,21 @@
             <div class="col-lg-8 col-sm-12">
                 <ul class="footer-contact">
                     <li><span class="footer-contact__label">Phone</span>123.456.7890</li>
-                    <li><span class="footer-contact__label">Email</span>milk@shookycookies.com</li>
+                    <li><span class="footer-contact__label">Email</span>milk@shookyscookies.com</li>
                     <li><span class="footer-contact__label">Location</span><address>12 Chip St, New York, NY 00000</address></li>
                 </ul>
             </div>
         </div>
     </footer>
+    <script>
+        (function(){
+            const menu = document.getElementById("menu-hamburger");
+            const options = document.getElementById("nav-options");
+
+            menu.addEventListener("click", function(){
+                options.classList.toggle("mobile-visible");
+            });
+        })();
+    </script>
 </body>
 </html>

@@ -8,11 +8,11 @@ var bs = require("browser-sync").create();
 gulp.task('serve', ['scss'], function() {
 
     bs.init({
-        server: "."
+        server: "./"
     });
 
     gulp.watch("src/scss/*/**", ['scss']);
-    gulp.watch(["index.html", "dist/images/*"]).on('change', bs.reload);
+    gulp.watch(["*.html", "dist/images/*", "dist/js/*.js"]).on('change', bs.reload);
 });
 
 

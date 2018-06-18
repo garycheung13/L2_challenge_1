@@ -8,7 +8,8 @@
     padding-bottom: 2em;
 
     h3 {
-        @include header_text(1.2rem);
+        font-size: 1.2rem;
+        color: white;
 
         @media screen and (max-width: 767px) {
             margin-top: 5%;
@@ -36,6 +37,7 @@
     float: left;
     width: 15%;
 
+    // prevents overlap some small phone sizes
     @media screen and (max-width: 767px) {
         width: 25%;
     }

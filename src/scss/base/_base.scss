@@ -2,33 +2,30 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
-a {
+a, a:visited {
     text-decoration: none;
 }
 
 section {
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
 
-    h2 {
-        @include header_text(2rem);
-        color: $bright_orange;
-    }
+h2 {
+    @include header_text(2rem);
+    color: $bright_orange;
+}
 
-    h3 {
-        @include header_text(1.2rem);
-        color: $bright_orange;
-    }
+h3 {
+    @include header_text(1.2rem);
+    color: $bright_orange;
+}
 
-    p {
-        @include body_copy(0.9rem);
-
-        @media screen and (max-width: 767px) {
-            width: 100%;
-        }
-    }
+p {
+    @include body_copy(1rem);
 }
 
 // reponsive rem settings
@@ -45,11 +42,11 @@ html {
 }
 
 .container {
-    margin-left: 10%;
-    margin-right: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
 
     @media screen and (max-width: 991px) {
-        margin-left: 5%;
-        margin-right: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }

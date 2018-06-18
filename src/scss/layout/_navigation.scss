@@ -5,21 +5,11 @@
     position: fixed;
     z-index: 10;
     background-color: $nav_background;
-
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    li a {
-        color: white;
-    }
 }
 
 .navbar-title {
     @include header_text(1.1rem);
-    li a {
-        color: $nav_title_color;
-    }
+    color: $nav_title_color;
 }
 
 .navbar-mobile {
@@ -32,6 +22,7 @@
 
 .navbar-items {
     @include all_caps(0.8rem);
+    list-style-type: none;
 
     li {
         display: inline-block;
@@ -39,6 +30,12 @@
         padding-right: 15px;
     }
 
+    li a {
+        color: white;
+    }
+}
+
+.mobile-initially-hidden {
     @media screen and (max-width: 767px) {
         display: none;
 
@@ -49,4 +46,8 @@
             margin-bottom: 20px;
         }
     }
+}
+
+.mobile-visible {
+    display: block;
 }
