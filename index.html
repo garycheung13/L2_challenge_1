@@ -13,13 +13,13 @@
     <nav class="navbar container row space-btwn align-center">
         <a class="navbar-title" href="#">Shooky's Cookies</a>
 
-        <!-- <div class="navbar-mobile col-sm-6">
-            <button class="btn-hamburger" role="navigation" id="menu-hamburger">
-                <img src="dist/images/hamburger.svg" alt="navigation icon">
-            </button>
-        </div> -->
+        <button class="btn-hamburger mobile-initially-hidden" role="navigation" id="menu-hamburger">
+            <div class="hamburger-container">
+                <div class="hamburger-icon"></div>
+            </div>
+        </button>
 
-        <ul id="nav-options" class="navbar-items">
+        <ul id="nav-options" class="navbar-items navbar-mobile">
             <li><a href="#">About</a></li>
             <li><a href="#">blog</a></li>
             <li><a href="#">visit</a></li>
@@ -42,7 +42,7 @@
     <section class="featured container">
         <h2>Our Cookies</h2>
         <div class="row reverse">
-            <div class="row col-lg-8 col-sm-12">
+            <div class="row col-lg-8 col-md-12">
                 <div class="card col-lg-6">
                     <img src="dist/images/featured_chocolate.jpg" alt="" class="card-image">
                     <h3 class="card-text">Classic Chocolate Chip</h3>
@@ -60,19 +60,15 @@
                     <h3 class="card-text">Almond Cookies</h3>
                 </div>
             </div>
-            <div class="content col-lg-4 col-sm-12">
+            <div class="content col-lg-4 col-md-12">
                 <h3>About Shooky's Cookies</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquip ex ea commodo consequat.
                     Duis aute irure dolor in reprehenderit in voluptate
                 </p>
                 <h3>Our Recipes</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquip ex ea commodo consequat.
                     Duis aute irure dolor in reprehenderit in voluptate
                 </p>
             </div>
@@ -120,9 +116,11 @@
         (function(){
             const menu = document.getElementById("menu-hamburger");
             const options = document.getElementById("nav-options");
+            const icon = document.querySelector("#menu-hamburger .hamburger-icon");
 
             menu.addEventListener("click", function(){
                 options.classList.toggle("mobile-visible");
+                icon.classList.toggle("hamburger-icon__close");
             });
         })();
     </script>

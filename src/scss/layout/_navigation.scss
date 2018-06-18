@@ -10,13 +10,9 @@
 .navbar-title {
     @include header_text(1.1rem);
     color: $nav_title_color;
-}
 
-.navbar-mobile {
-    text-align: right;
-
-    @media screen and (min-width: 768px) {
-        display: none;
+    @media screen and(max-width: 767px) {
+        width: 50%;
     }
 }
 
@@ -36,18 +32,47 @@
 }
 
 .mobile-initially-hidden {
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 768px) {
         display: none;
+    }
+}
+
+.navbar-mobile {
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        max-height: 0vh;
+        transition: max-height 250ms ease-out;
+        // transform: scaleY(0);
+        // height: 0;
 
         li {
             display: block;
             text-align: center;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            overflow: hidden;
+            opacity: 0;
+            transition: opacity 250ms;
+        }
+
+        // pushing the first nav item down helps with layout readability
+        li:first-child {
             margin-top: 20px;
-            margin-bottom: 20px;
         }
     }
 }
 
 .mobile-visible {
-    display: block;
+    max-height: 100vh;
+    // transform: scaleY(1);
+    li {
+        opacity: 1;
+    }
+}
+
+.hamburger-container {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 24px;
 }

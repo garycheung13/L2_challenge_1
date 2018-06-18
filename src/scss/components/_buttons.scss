@@ -10,3 +10,7 @@
     background-color: $bright_orange;
     color: white;
 }
+
+.btn-hamburger {
+    text-align: left; // deals with child misalignment issues
+}

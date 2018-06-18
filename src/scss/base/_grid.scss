@@ -28,6 +28,12 @@
     flex-wrap: wrap-reverse;
 }
 
+@media screen and (max-width: 991px) {
+    .col-md-12 {
+        flex-basis: 100%;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .col-sm-6 {
         flex-basis: 50%;

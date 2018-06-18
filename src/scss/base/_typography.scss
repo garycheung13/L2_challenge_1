@@ -1,20 +1,21 @@
 @mixin header_text($font_size) {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: $font_size;
 }
 
 @mixin all_caps($font_size) {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
+    font-style: normal;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: $font_size;
 }
 
 @mixin body-copy($font_size) {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: $font_size;
