@@ -5,10 +5,10 @@
     background-size: cover;
     min-height: 600px;
     padding-top: 60px; // offset the sticky nav
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
+
+    @media screen and (max-width: $mobile_break) {
+        min-height: 400px;
+    }
 }
 
 .hero-content {
@@ -26,7 +26,7 @@
         transform: translateY(50%);
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $mobile_break) {
         width: 100%;
         padding: 7.5%;
 
@@ -41,7 +41,7 @@
 .hero-text {
     width: 80%;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $mobile_break) {
         width: 100%;
     }
 }

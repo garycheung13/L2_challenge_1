@@ -8,10 +8,10 @@
 }
 
 .navbar-title {
-    @include header_text(1.1rem);
+    @include header_text(1.125rem);
     color: $nav_title_color;
 
-    @media screen and(max-width: 767px) {
+    @media screen and(max-width: $mobile_break) {
         width: 50%;
     }
 }
@@ -37,14 +37,16 @@
     }
 }
 
-.navbar-mobile {
-    @media screen and (max-width: 767px) {
+@media screen and (max-width: $mobile_break) {
+    .navbar-mobile {
         width: 100%;
-        max-height: 0vh;
+        max-height: 0;
         transition: max-height 250ms ease-out;
-        // transform: scaleY(0);
-        // height: 0;
 
+        // pushing the first nav item down helps with layout readability
+        li:first-child {
+            margin-top: 20px;
+        }
         li {
             display: block;
             text-align: center;
@@ -53,26 +55,19 @@
             overflow: hidden;
             opacity: 0;
             transition: opacity 250ms;
+            border-top: 1px solid $nav_background_border;
         }
 
-        // pushing the first nav item down helps with layout readability
-        li:first-child {
-            margin-top: 20px;
+        li:last-child {
+            border-bottom: 1px solid $nav_background_border;
         }
     }
-}
 
-.mobile-visible {
-    max-height: 100vh;
-    // transform: scaleY(1);
-    li {
-        opacity: 1;
+    .mobile-visible {
+        max-height: 100vh;
+
+        li {
+            opacity: 1;
+        }
     }
-}
-
-.hamburger-container {
-    position: relative;
-    display: inline-block;
-    width: 35px;
-    height: 24px;
 }

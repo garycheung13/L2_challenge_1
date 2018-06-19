@@ -19,7 +19,7 @@
         width: 100%;
     }
 
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: $tablet_break) {
         padding-left: 0;
     }
 }

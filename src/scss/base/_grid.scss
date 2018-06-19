@@ -20,6 +20,10 @@
     justify-content: space-between;
 }
 
+.justify-end {
+    justify-content: flex-end;
+}
+
 .align-center {
     align-items: center;
 }
@@ -28,13 +32,13 @@
     flex-wrap: wrap-reverse;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: $tablet_break) {
     .col-md-12 {
         flex-basis: 100%;
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $mobile_break) {
     .col-sm-6 {
         flex-basis: 50%;
     }
