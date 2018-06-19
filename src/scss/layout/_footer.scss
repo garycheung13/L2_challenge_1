@@ -11,7 +11,7 @@
         font-size: 1.2rem;
         color: white;
 
-        @media screen and (max-width: $mobile_break) {
+        @include breakpoint-max(small) {
             margin-top: 5%;
             margin-bottom: 10%;
         }
@@ -38,7 +38,7 @@
     width: 15%;
 
     // prevents overlap some small phone sizes
-    @media screen and (max-width: $mobile_break) {
+    @include breakpoint-max(small) {
         width: 25%;
     }
 }

@@ -9,15 +9,16 @@
 
 .navbar-title {
     @include header_text(1.125rem);
-    color: $nav_title_color;
-
-    @media screen and(max-width: $mobile_break) {
+    @include breakpoint-max(small) {
         width: 50%;
     }
+
+    color: $nav_title_color;
 }
 
 .navbar-items {
     @include all_caps(0.8rem);
+
     list-style-type: none;
 
     li {
@@ -32,12 +33,12 @@
 }
 
 .mobile-initially-hidden {
-    @media screen and (min-width: 768px) {
+    @include breakpoint-min(medium) {
         display: none;
     }
 }
 
-@media screen and (max-width: $mobile_break) {
+@include breakpoint-max(small) {
     .navbar-mobile {
         width: 100%;
         max-height: 0;

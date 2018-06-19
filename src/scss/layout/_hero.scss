@@ -4,9 +4,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 600px;
-    padding-top: 60px; // offset the sticky nav
+    padding-top: 60px; // offset the sticky nav height
 
-    @media screen and (max-width: $mobile_break) {
+    @include breakpoint-max(small) {
         min-height: 400px;
     }
 }
@@ -26,7 +26,7 @@
         transform: translateY(50%);
     }
 
-    @media screen and (max-width: $mobile_break) {
+    @include breakpoint-max(small) {
         width: 100%;
         padding: 7.5%;
 
@@ -41,7 +41,7 @@
 .hero-text {
     width: 80%;
 
-    @media screen and (max-width: $mobile_break) {
+    @include breakpoint-max(small) {
         width: 100%;
     }
 }

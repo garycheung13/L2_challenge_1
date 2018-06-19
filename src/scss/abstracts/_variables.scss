@@ -5,3 +5,15 @@ $bright_orange: rgb(222, 75, 38) !default;
 
 $mobile_break: 767px;
 $tablet_break: 991px;
+
+$breakpoints: (
+    small: 767px,
+    medium: 991px,
+    large: 1199px
+);
+
+$at_least_points: (
+    medium: 768px,
+    large: 992px,
+    extra_large: 1200
+);

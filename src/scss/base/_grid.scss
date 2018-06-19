@@ -32,13 +32,13 @@
     flex-wrap: wrap-reverse;
 }
 
-@media screen and (max-width: $tablet_break) {
+@include breakpoint-max(medium) {
     .col-md-12 {
         flex-basis: 100%;
     }
 }
 
-@media screen and (max-width: $mobile_break) {
+@include breakpoint-max (small) {
     .col-sm-6 {
         flex-basis: 50%;
     }

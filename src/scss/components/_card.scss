@@ -3,7 +3,7 @@
     padding: 2%;
     margin-bottom: 5%;
 
-    @media screen and (max-width: $mobile_break) {
+    @include breakpoint-max(small) {
         margin-bottom: 15%;
     }
 }
@@ -18,7 +18,7 @@
     right: 5%;
     top: 15%;
 
-    @media screen and (max-width: $mobile_break) {
+    @include breakpoint-max(small) {
         font-size: 1rem;
     }
 }

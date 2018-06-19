@@ -19,7 +19,7 @@
         width: 100%;
     }
 
-    @media screen and (max-width: $tablet_break) {
+    @include breakpoint-max(medium) {
         padding-left: 0;
     }
 }
